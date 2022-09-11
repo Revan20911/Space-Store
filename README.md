@@ -1,5 +1,7 @@
 # Space-Store
-A React storefront page built using React. 
+A React storefront page built using React.
+
+live preview: https://revan20911.github.io/Space-Store/
 
 **Functionality**  
 
