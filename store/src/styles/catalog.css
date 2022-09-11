@@ -1,0 +1,85 @@
+
+/* Store Page */
+
+#catalog{
+
+    display: flex;
+}
+
+.item{
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 20rem;
+    width: 20rem;
+    background-color: white;
+    justify-content: center;
+    margin: 1rem;
+    padding: 20px;
+    border-radius: 1.5rem;
+    animation: item  0.7s ease-in forwards;
+    box-shadow: 0rem 0.1rem 10px rgb(0, 0, 0);
+}
+
+.item:hover{
+
+    background-color: var(--button-hover);
+    cursor: pointer;
+}
+
+.item img{
+
+    max-width: 20rem;
+    max-height: 20rem;
+    border-radius: inherit;
+}
+
+.item-row{
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 12px;
+    
+}
+
+.item-info{
+
+    margin: 20px;
+    font-size: x-large;
+    text-align: left;
+
+}
+
+.item-price{
+
+    margin: 20px;
+    font-size: x-large;
+    text-align: left;
+    font-style: italic;
+}
+
+@media screen and (max-width: 800px){
+
+    .item-row{
+
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        gap: 10rem;
+
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .item-row{
+
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        gap: 10rem;
+    }
+}
+
+@keyframes item{
+
+    from {opacity: 0;} to {opacity: 1;}
+    from {margin-top: 50px;} to {margin-top: 20px;}
+}
