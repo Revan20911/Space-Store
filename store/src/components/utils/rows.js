@@ -1,28 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import Item from "./item";
+import uniqid from "uniqid";
 
 
-class Rows  extends React.Component{
-    constructor(props){
-        super(props);
 
-        this.state = useState(props);
-    }
-    render(){
-
-        const {items} = this.state;
-
+const Rows = ({items, onClick}) => {
+   
         return(
             <div className="item-row">
-                {items.map( item => 
-                    <Item
+                {items.map((item) => {
+                    return <Item
+                    id={uniqid()}
+                    key={uniqid()}
                     itemName={item.itemName}
                     img={item.img}
+                    onClick={onClick}
                     />
-                )}
+                })}
             </div>
         );
     };
-};
 
 export default Rows;

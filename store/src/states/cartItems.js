@@ -1,5 +1,3 @@
-const cartItems = {
-    items: []
-};
+const cartItems = []
 
 export default cartItems;

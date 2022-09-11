@@ -1,14 +1,16 @@
 import React from "react";
 import Rows from "./utils/rows";
+import storeItems from "../states/storeItems";
 
-const catalogContents = () => {
+const CatalogContents = ({onClick}) => {
+
     return(
         <div className="row-container">
-        <Rows></Rows>
-        <Rows></Rows>
-        <Rows></Rows>
+        <Rows items={storeItems} 
+        onClick={onClick}
+        />
         </div>
     )
 }
 
-export default catalogContents;
+export default CatalogContents;

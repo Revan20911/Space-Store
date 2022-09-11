@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/header";
-import cartContents from "../components/cartContents";
-import cartItems from "../states/cartItems";
+import CartContents from "../components/cartContents";
+
 
 
 const Cart = () => {
@@ -9,6 +9,7 @@ const Cart = () => {
         <>
         <Header/>
         <main>
+            <CartContents/>
 
         </main>
         </>
