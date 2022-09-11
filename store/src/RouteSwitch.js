@@ -8,7 +8,7 @@ import Buy from "./pages/buy";
 const RouteSwitch = () => {
 
     return(
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
             <Route path="/" element={<App/>}/>
             <Route path="/Catalog" element={<Catalog/>}/>
