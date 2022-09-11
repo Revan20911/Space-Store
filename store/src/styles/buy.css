@@ -1,0 +1,49 @@
+:root{
+
+    --header: #f59542;
+    --button: #faf5f0;
+    --button-hover: #f5d6cb;
+}
+
+main{
+
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.item-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1.3rem;
+    box-shadow: 0rem 0.1rem 10px rgb(0, 0, 0);
+    font-size: 3em;
+    
+
+}
+
+ 
+
+.item-container:hover{
+
+    background-color: var(--button-hover);
+    cursor: pointer;
+}
+
+.item-description{
+
+    display: flex;
+
+
+}
+
